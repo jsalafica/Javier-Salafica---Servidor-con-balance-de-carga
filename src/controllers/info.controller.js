@@ -11,6 +11,7 @@ const args = yargs(process.argv.slice(2))
   }).argv;
 
 const getInfo = (req, res) => {
+  console.log("Entré a info");
   res.json({
     arguments: args,
     proyectFolder: process.cwd(),
